@@ -50,7 +50,7 @@ body {
   background-color: #ffffff;
   font-size: 16px;
   line-height: 24px;
-  color: #333333;
+  color: #444;
   background: url(stucco.png);
   -webkit-font-smoothing: subpixel-antialiased;
 }
@@ -1623,6 +1623,12 @@ input[type="text"].inline {
   border:1px solid rgba(0,0,0,.25);
   box-shadow:0 2px 4px rgba(0,0,0,.2);
 }
+#preloader {
+  position: fixed;
+  top:-500%;
+  left:-500%;
+  visibility: hidden;
+}
 .images-container {
   overflow: hidden;
   width:300px;
@@ -1689,8 +1695,10 @@ input[type="text"].inline {
 }
 .user-name {
   text-align:center;
-  padding:1.5rem 0 .7rem;
+  padding:1.5rem 0 .6rem;
   font-size:1.5rem;
+  font-weight: 600;
+  text-shadow: 0 1px 0 white;
 
   background-repeat: repeat-x;
   background-image: linear-gradient(top, #ffffff, #f2f2f2);

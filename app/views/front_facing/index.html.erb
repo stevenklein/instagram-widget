@@ -1,3 +1,4 @@
+<div id="preloader"><img src="/assets/image_7.jpg"></div>
 <div class="widget-container">
       <div class="images-container">
         <div class="image-container">
@@ -27,7 +28,7 @@
           Nike GoPro
         </div>
         <div class="meta-container">
-          <a href="#" class="cpt-button size-small style-primary">Follow</a>
+          <a href="#" class="cpt-button size-small">Follow</a>
           <div class="meta">
             <div class="val">5,125</div>
             <div class="key">photos</div>
@@ -45,12 +46,19 @@
         var currentIndex = 6;
 
         var nextImageMarkup = function() {
+
+          loadNextImage(currentIndex);
+
             if (currentIndex < 21) {
                 ++currentIndex;
             } else {
                 currentIndex = 1;
             }
             return '<div class="image-container"><img src="/assets/image_' + (currentIndex) + '.jpg"></div>'
+        }
+
+        var loadNextImage = function(index) {
+          $('#preloader').attr('src', '/assets/image_' + (index) + '.jpg');
         }
 
         var changeImage = function() {
