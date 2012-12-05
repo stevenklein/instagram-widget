@@ -1,0 +1,63 @@
+<div class="widget-container">
+      <div class="images-container">
+        <div class="image-container">
+          <%= image_tag "image_1.jpg" %>
+        </div>
+        <div class="image-container">
+          <%= image_tag "image_2.jpg" %>
+        </div>
+        <div class="image-container">
+          <%= image_tag "image_3.jpg" %>
+        </div>
+        <div class="image-container">
+          <%= image_tag "image_4.jpg" %>
+        </div>
+        <div class="image-container">
+          <%= image_tag "image_5.jpg" %>
+        </div>
+        <div class="image-container">
+          <%= image_tag "image_6.jpg" %>
+        </div>
+      </div>
+      <div class="account-info">
+        <div class="profile-pic-container">
+          <%= image_tag "logo.jpg", :class => "profile-pic" %>
+        </div>
+        <div class="user-name">
+          Nike GoPro
+        </div>
+        <div class="meta-container">
+          <a href="#" class="cpt-button size-small style-primary">Follow</a>
+          <div class="meta">
+            <div class="val">5,125</div>
+            <div class="key">photos</div>
+          </div>
+          <div class="meta">
+            <div class="val">12,689</div>
+            <div class="key">followers</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<script>
+    $(function() {
+        var currentIndex = 6;
+
+        var nextImageMarkup = function() {
+            if (currentIndex < 21) {
+                ++currentIndex;
+            } else {
+                currentIndex = 1;
+            }
+            return '<div class="image-container"><img src="/assets/image_' + (currentIndex) + '.jpg"></div>'
+        }
+
+        var changeImage = function() {
+            $('.image-container:last-of-type').remove();
+            $('.images-container').prepend(nextImageMarkup());
+        }
+
+        var k = setInterval(changeImage, 4000);
+    });
+</script>
