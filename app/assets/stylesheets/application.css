@@ -1589,6 +1589,7 @@ input[type="text"].inline {
   
   background-image: linear-gradient(top, #6F97B6, #3F729B);
   background-image: -webkit-linear-gradient(top, #6F97B6, #3F729B);
+  background-image: -moz-linear-gradient(top, #6F97B6, #3F729B);
   border:1px solid #1C5380;
   box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 1px 0px, rgba(255, 255, 255, 0.0470588) 1px 0px 0px 0px inset, rgba(255, 255, 255, 0.0470588) -1px 0px 0px 0px inset, rgba(0, 0, 0, 0.0784314) 0px 1px 0px 0px inset;
   color: #fff !important;
@@ -1621,6 +1622,8 @@ input[type="text"].inline {
   border-radius: 6px;
   border:1px solid rgba(0,0,0,.17);
   border-bottom-color:rgba(0,0,0,.23);
+  -webkit-box-shadow:0 2px 4px rgba(0,0,0,.1);
+  -moz-box-shadow:0 2px 4px rgba(0,0,0,.1);
   box-shadow:0 2px 4px rgba(0,0,0,.1);
   position:relative;
 }
@@ -1634,6 +1637,8 @@ input[type="text"].inline {
   border-radius: 6px;
   width:300px;
   height:150px;
+  -webkit-box-shadow: 1px 0 0 rgba(0,0,0,.2), 0px -1px 0 rgba(0,0,0,.2), -1px 0 0 rgba(0,0,0,.2);
+  -moz-box-shadow: 1px 0 0 rgba(0,0,0,.2), 0px -1px 0 rgba(0,0,0,.2), -1px 0 0 rgba(0,0,0,.2);
   box-shadow: 1px 0 0 rgba(0,0,0,.2), 0px -1px 0 rgba(0,0,0,.2), -1px 0 0 rgba(0,0,0,.2);
 }
 .image-container {
@@ -1710,6 +1715,8 @@ input[type="text"].inline {
   background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
   background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
   border-bottom:1px solid #d3d3d3;
+  -webkit-box-shadow:0 -1px 0 rgba(0,0,0,.3);
+  -moz-box-shadow:0 -1px 0 rgba(0,0,0,.3);
   box-shadow:0 -1px 0 rgba(0,0,0,.3);
 }
 
@@ -1735,6 +1742,8 @@ input[type="text"].inline {
 }
 .meta-container .meta:hover {
   background-color:rgba(0,0,0,.03);
+  -webkit-box-shadow: 0 2px 6px rgba(0,0,0,.05) inset, 0 -1px 0 rgba(0,0,0,.3), 1px 0px 0 rgba(0,0,0,.1);
+  -moz-box-shadow: 0 2px 6px rgba(0,0,0,.05) inset, 0 -1px 0 rgba(0,0,0,.3), 1px 0px 0 rgba(0,0,0,.1);
   box-shadow: 0 2px 6px rgba(0,0,0,.05) inset, 0 -1px 0 rgba(0,0,0,.3), 1px 0px 0 rgba(0,0,0,.1);
   cursor:pointer;
   border-left:1px solid #dadada;
@@ -1756,6 +1765,8 @@ input[type="text"].inline {
   padding:.75rem;
   background:white;
   box-shadow:0 1px 2px rgba(0,0,0,.1);
+  -webkit-box-shadow:0 1px 2px rgba(0,0,0,.1);
+  -moz-box-shadow:0 1px 2px rgba(0,0,0,.1);
   color:#aaa;
   border:1px solid #ddd;
   border-bottom-color: #ccc
